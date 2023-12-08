@@ -14,3 +14,5 @@ recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+The complexity of my implementation in the worst case should be $\Theta(n^3)$. The outer loop will run $n$ times as it iterates through the array. The first inner for-loop will also run $n$ times. Within the worst case, the list would be in reversed order which will end up having to move $n$ items then $n-1$ items then $n-2$ and so on till the 2nd to last element as it will then be sorted. This would become $n(n(n-2))$ which is $n^3-2n^2$ which would be $\Theta(n^3)$
